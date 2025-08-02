@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Ryan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="opçõeos-h1">
+            <h1>Ryan Cunha</h1>
+            <div class="opções">
+                <li class="nav-item">
+                    <a id="link" href="#Sobre">
+                        <p data-i18n="link-sobre">Sobre</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="link" href="#Projetos">
+                        <p data-i18n="link-projetos">Projetos</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="link" href="#Freelancer">
+                        <p data-i18n="link-freelancer">Freelancer</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="link" href="#contatos">
+                        <p data-i18n="link-contato">Contatos</p>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="tema-idioma">
+            <div class="div-idioma">
+                <select id="idioma">
+                    <option value="BR">
+                        BR
+                    </option>
+                    <option value="US">
+                        US
+                    </option>
+                </select>
+                <img id="bandeira" src="./src/Idioma/br.png" height="30px" alt="idioma">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="Principal">
+            <div class="imagem-principal">
+                <img src="./src/ryan.jpg" alt="#">
+            </div>
+            <div class="container-carrosel">
+                <div class="carrosel">
+                    <div class="item" style="--delay: 1.6s"><img src="./src/tecnologias/HTML.png" alt="HTML"></div>
+                    <div class="item" style="--delay: 2.6s"><img src="./src/tecnologias/CSS.png" alt="CSS"></div>
+                    <div class="item" style="--delay: 3.6s"><img src="./src/tecnologias/JAVASCRIPT.png"
+                            alt="JAVASCRIPT"></div>
+                    <div class="item" style="--delay: 4.6s"><img src="./src/tecnologias/GIT.png" alt="GIT"></div>
+                    <div class="item" style="--delay: 5.6s"><img src="./src/tecnologias/GITHUB.png" alt="GITHUB"></div>
+                    <div class="item" style="--delay: 6.6s"><img src="./src/tecnologias/VSCODE.png" alt="VSCODE"></div>
+                    <div class="item" style="--delay: 7.6s"><img src="./src/tecnologias/wordpress.png" alt="WORDPRESS">
+                    </div>
+                    <div class="item" style="--delay: 8.6s"><img src="./src/tecnologias/python.png" alt="PYTHON"></div>
+                </div>
+            </div>
+        </section>
+        <section id="Sobre" class="Sobre">
+            <h2 data-i18n="link-sobre">Sobre</h2>
+            <div>
+                <p data-i18n="sobre-descrição">Sou um desenvolvedor front-end com experiência na criação de interfaces modernas, responsivas e
+                    funcionais. Sou proficiente em HTML, CSS e JavaScript, as principais tecnologias utilizadas para eu
+                    desenvolver.
+
+                    Estou em estudando para fazer uma transição para desenvolvedor full-stack e desenvolvimento mobile e
+                    inteligência artificial.
+
+                    Busco oportunidades desafiadoras onde você possa aplicar seu conhecimento, aprender novas
+                    tecnologias e crescer profissionalmente.</p>
+            </div>
+        </section>
+        <section id="Projetos">
+            <h3 data-i18n="link-projetos">Projetos</h3>
+            <div class="Projetos">
+                <div class="Projeto">
+                    <img src="./src/Projetos/bombeiro.png" alt="Projeto-bombeiro">
+                    <div class="descrição">
+                        <p class="nome-principal" data-i18n="">Landing Page</p>
+                        <p class="detalhes" data-i18n="ladnding-page-descrição">Desenvolvi uma landing page responsiva para uma empresa de que fornece curso
+                            de bombeiros, com compatibilidade para computadores e dispositivos móveis. O projeto foi
+                            construido ultilizado HTML, CSS e JavaScript.</p>
+                        <button class="disponíveis">
+                            <a href="https://polocuricica.vercel.app/" data-i18n="disponíveis">Visualizar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="Projeto">
+                    <img src="./src/Projetos/caça-niqueis.png" alt="projeto caça niquel">
+                    <div class="descrição">
+                        <p class="nome-principal" data-i18n="nome-projeto-caça">Caça Niqueis</p>
+                        <p class="detalhes" data-i18n="caça-niqueis-descrição">Desenvolvi um jogo de caça níqueis inspirado em cassinos, com objetivo de
+                            praticar e aprimorar minhas habilidades em JavaScript. As tecnologias ultilizadas foram
+                            HTML, CSS e JavaScript.</p>
+                        <button class="Indiponivel" data-i18n="Indisponível">Visualização Indisponível</button>
+                    </div>
+                </div>
+                <div class="Projeto">
+                    <img src="./src/Projetos/caixa-postal.png" alt="projeto caixa postal">
+                    <div class="descrição">
+                        <p class="nome-principal" data-i18n="nome-caixa-principal">Caixa Postal</p>
+                        <p class="detalhes" data-i18n="caixa-postal-descrição">Desenvolvi uma caixa de correio digital inspirada no WhatsApp, projetada
+                            para prédios sem porteiro. O sistema permite que os visitantes enviem mensagens diretamente
+                            aos moradores, facilitando a comunicação. Também permite verificar, em tempo real, se os
+                            apartamentos estão disponíveis para alugar ou vagos. Tudo funciona online. O projeto foi
+                            construído com HTML, CSS, JavaScript e integração com API.</p>
+                        <button class="Indiponivel" data-i18n="Indisponível">Visualização Indisponível</button>
+                    </div>
+                </div>
+                <div class="Projeto">
+                    <img src="./src/Projetos/banner-github.png" alt=" MEU GITHUB">
+                    <div class="descrição">
+                        <p class="nome-principal">GITHUB</p>
+                        <p class="detalhes" data-i18n="github-descrição">Veja mais projetos no meu GitHub.</p>
+                        <button class="disponíveis">
+                            <a href="https://github.com/ryancunhha" data-i18n="disponíveis">Visualizar</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Freelancer">
+            <h4 data-i18n="link-freelancer">FreeLancer</h4>
+            <div class="Projetos">
+                <div class="Projeto">
+                    <div class="descrição">
+                        <p class="nome-principal" data-i18n="serviço-nome1">Criação de Site</p>
+                        <p class="detalhes" data-i18n="serviço-detalhe1">Criarei páginas rápidas, responsivas e otimizadas ultilizando HTML, CSS e
+                            JavaScript.</p>
+                    </div>
+                </div>
+                <div class="Projeto">
+                    <div class="descrição">
+                        <p class="nome-principal" data-i18n="serviço-nome2">Otimização SEO</p>
+                        <p class="detalhes" data-i18n="serviço-detalhe2">Maximize a visibilidade do seu site nos mecanismos de busca implementando
+                            métodos avançados de SEO para aumentar o tráfego do seu site.</p>
+                    </div>
+                </div>
+                <div class="Projeto">
+                    <div class="descrição">
+                        <p class="nome-principal" data-i18n="serviço-nome3">Vamos Negociar?</p>
+                        <p class="detalhes" data-i18n="serviço-detalhe3">Entre em contato para conversamos sobre parcerias ou projetos.</p>
+                    </div>
+                    <a class="rede" href="https://www.instagram.com/ryancunhha/">
+                        <img src="./src/redes-socias/instagram.png" alt="Instagram">
+                    </a>
+                    <a class="rede" href="https://www.linkedin.com/in/ryancunhha">
+                        <img src="./src/redes-socias/linkedin.png" alt="Linkedin">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer id="contatos">
+            <p data-i18n="entre-em-contato">Entre em contato</p>
+            <a href="https://www.instagram.com/ryancunhha/"><img src="./src/redes-socias/instagram.png"
+                    alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/ryancunhha"><img src="./src/redes-socias/linkedin.png"
+                    alt="Linkedin"></a>
+            <a href="https://github.com/ryancunhha"><img src="./src/redes-socias/github.png" alt="GitHub"></a>
+        </footer>
+    </main>
+</body>
+
+</html>
