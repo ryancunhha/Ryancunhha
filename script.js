@@ -1,25 +1,25 @@
-const hamburguer = document.querySelector("#hamburguer");
-const navMenu = document.querySelector(".opções");
-const idioma = document.getElementById("idioma");
-const bandeira = document.querySelector("#bandeira");
+const hamburguer = document.querySelector("#hamburguer")
+const navMenu = document.querySelector(".opções")
+const idioma = document.getElementById("idioma")
+const bandeira = document.querySelector("#bandeira")
 
 hamburguer.addEventListener("click", () => {
-    hamburguer.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    hamburguer.classList.toggle("active")
+    navMenu.classList.toggle("active")
 });
 
 document.querySelectorAll("#link").forEach(n => n.addEventListener("click", () => {
-    hamburguer.classList.remove("active");
-    navMenu.classList.remove("active");
+    hamburguer.classList.remove("active")
+    navMenu.classList.remove("active")
 }));
 
 idioma.addEventListener("change", () => {
-    const idiomaAtual = idioma.value;
+    const idiomaAtual = idioma.value
 
     if (idiomaAtual === "BR") {
-        bandeira.src = "./src/Idioma/br.png";
+        bandeira.src = "./src/Idioma/br.png"
     } else if (idiomaAtual === "US") {
-        bandeira.src = "./src/Idioma/us.png";
+        bandeira.src = "./src/Idioma/us.png"
     }
 
     setLanguage(idiomaAtual);
@@ -27,18 +27,18 @@ idioma.addEventListener("change", () => {
 
 async function setLanguage(langCode) {
     try {
-        const res = await fetch(`./src/idioma/${langCode.toLowerCase()}.json`);
-        const dict = await res.json();
+        const res = await fetch(`./src/Idioma/${langCode.toLowerCase()}.json`)
+        const dict = await res.json()
 
         document.querySelectorAll("[data-i18n]").forEach(el => {
-            const chave = el.getAttribute("data-i18n");
+            const chave = el.getAttribute("data-i18n")
             if (dict[chave]) {
-                el.innerText = dict[chave];
+                el.innerText = dict[chave]
             }
         });
 
-        document.documentElement.lang = langCode.toLowerCase();
+        document.documentElement.lang = langCode.toLowerCase()
     } catch (error) {
-        console.error("Erro ao carregar idioma:", error);
+        console.error("Erro ao carregar idioma:", error)
     }
 }
