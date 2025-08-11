@@ -22,10 +22,10 @@ idioma.addEventListener("change", () => {
         bandeira.src = "./src/Idioma/us.png"
     }
 
-    setLanguage(idiomaAtual);
+    Lingua(idiomaAtual)
 });
 
-async function setLanguage(langCode) {
+async function Lingua(langCode) {
     try {
         const res = await fetch(`./src/Idioma/${langCode.toLowerCase()}.json`)
         const dict = await res.json()
@@ -39,6 +39,6 @@ async function setLanguage(langCode) {
 
         document.documentElement.lang = langCode.toLowerCase()
     } catch (error) {
-        console.error("Erro ao carregar idioma:", error)
+        console.error("Erro ao carregar idioma", error)
     }
 }
