@@ -129,7 +129,7 @@ main {
     height: 50px;
     position: absolute;
     left: 100%;
-    animation: carroselRUN 8.6s linear infinite;
+    animation: carroselRUN 7.6s linear infinite;
     animation-delay: var(--delay);
 }
 
@@ -173,8 +173,23 @@ h2 {
     font-family: var(--fonte-padrão);
 }
 
+.CV {
+    background-color: #0067b8;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-left: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    color: white;
+    box-shadow: #d6d6d6 3px 3px 20px 0;
+    width: 120px;
+}
+
 h3 {
-    margin-top: 10vh;
+    margin-top: 3.4vh;
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -183,19 +198,31 @@ h3 {
 
 .Projetos {
     display: flex;
+    flex-direction: column;
     width: 100vw;
+    justify-content: center;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+    gap: 0.5vw;
+}
+
+.separação {
+    display: flex;
+    width: 90vw;
+    margin-left: 5vw;
     height: max-content;
     flex-direction: row;
     justify-content: center;
-    padding: 7vh;
     gap: 2vw;
 }
 
 .Projeto {
+    width: 50vw;
     height: max-content;
     background-color: white;
     border-radius: 7px;
     box-shadow: #d6d6d6 3px 3px 20px 0;
+    font-family: var(--fonte-padrão);
     border: 1px solid rgba(208, 208, 208, 0.837);
 }
 
@@ -205,7 +232,6 @@ h3 {
 }
 
 .descrição {
-    width: 20vw;
     font-family: var(--fonte-padrão);
     padding: 1vw;
 }
@@ -215,7 +241,7 @@ h3 {
 }
 
 .detalhes {
-    margin: 2vh;
+    margin: 1vh;
     width: auto;
     font-size: 0.7rem;
 }
@@ -231,21 +257,15 @@ h3 {
     border: 0;
     width: 100%;
     height: 50px;
+    margin-top: 2vh;
 }
 
-.disponíveis-Github {
+.disponíveis a {
     display: flex;
-    cursor: pointer;
-    justify-content: center;
     align-items: center;
-    font-family: var(--fonte-padrão);
-    background-color: #5d6163;
-    border-radius: 3px;
-    margin-top: 2vh;
-    border: 0;
+    justify-content: center;
     width: 100%;
-    height: 50px;
-
+    height: 100%;
 }
 
 .descrição button a {
@@ -281,6 +301,15 @@ h4 {
     transition: 0.6s;
 }
 
+.FreeLancer {
+    display: flex;
+    padding: 5vw;
+    margin-left: 5vw;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
+
 .rede img:hover {
     transform: translateY(-0.7vh);
 }
@@ -302,7 +331,7 @@ footer {
     padding-left: 15vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     html {
         scroll-behavior: smooth;
     }
@@ -383,6 +412,10 @@ footer {
         margin-top: 8vh;
     }
 
+    .CV {
+        margin-left: 16vw;
+    }
+
     .nome-principal {
         width: max-content;
         margin-left: 1.5vw;
@@ -396,6 +429,10 @@ footer {
         gap: 8vw;
     }
 
+    .Projeto {
+        width: 90vw;
+    }
+
     .Projeto img {
         height: auto;
     }
@@ -405,6 +442,13 @@ footer {
         width: auto;
         height: auto;
         font-size: 0.7rem;
+    }
+
+    .separação {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
     }
 
     .disponíveis {
@@ -427,7 +471,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: auto;
+        width: 100%;
         height: auto;
     }
 
@@ -448,8 +492,16 @@ footer {
         background-color: #5d6163;
     }
 
+
+    .FreeLancer {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 4vh;
+        justify-content: center;
+    }
+
     .rede img {
-        margin-left: 3.7vh;
         width: 50px;
         height: 50px;
     }
