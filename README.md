@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 ## Hello, I'm Ryan Cunha 👋
 
 - 🔭 I’m currently working on Front-End 
 - 🌱 I’m currently learning JavaScript
-=======
-## Oi 👋
 
-<!--
-**ryancunhha/Ryancunhha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
->>>>>>> parent of 29893d7 (1.6V)
-
-Here are some ideas to get you started:
 
 <<<<<<< HEAD
   ##
