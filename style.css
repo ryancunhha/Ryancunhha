@@ -177,15 +177,19 @@ h2 {
     background-color: #0067b8;
     cursor: pointer;
     border-radius: 2px;
-    margin-left: 70vw;
+    margin-left: 65vw;
     display: flex;
+    padding: 1vw;
     justify-content: center;
     align-items: center;
     height: 40px;
     border: 0;
-    color: white;
     box-shadow: #d6d6d6 3px 3px 20px 0;
-    width: 120px;
+
+    a {
+        color: white;
+        text-decoration-line: none;
+    }
 }
 
 h3 {
